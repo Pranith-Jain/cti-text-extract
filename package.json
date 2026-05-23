@@ -1,0 +1,56 @@
+{
+  "name": "cti-text-extract",
+  "version": "0.1.0",
+  "description": "Synchronous, dependency-free CTI entity extractor. Pulls IoCs, CVEs, threat actors, malware families, and topic tags out of unstructured text.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run typecheck && npm run test && npm run build"
+  },
+  "keywords": [
+    "cti",
+    "threat-intelligence",
+    "ioc",
+    "indicator",
+    "extract",
+    "regex",
+    "mitre",
+    "attack",
+    "stix"
+  ],
+  "author": "Pranith Jain",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pranith84/cti-text-extract.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pranith84/cti-text-extract/issues"
+  },
+  "homepage": "https://github.com/pranith84/cti-text-extract#readme",
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
