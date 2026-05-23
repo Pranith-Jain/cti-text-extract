@@ -7,7 +7,7 @@ import {
   extractMalware,
   extractTags,
   makeSummary,
-} from '../src/extract';
+} from '../src/extract.js';
 
 // The screenshot's APT28 brief — single source of truth for end-to-end tests.
 const APT28_BRIEF = `APT28 Targets European Government Entities
