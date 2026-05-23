@@ -1,6 +1,6 @@
 # cti-text-extract
 
-[![CI](https://github.com/pranith84/cti-text-extract/actions/workflows/ci.yml/badge.svg)](https://github.com/pranith84/cti-text-extract/actions/workflows/ci.yml)
+[![CI](https://github.com/Pranith-Jain/cti-text-extract/actions/workflows/ci.yml/badge.svg)](https://github.com/Pranith-Jain/cti-text-extract/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 Synchronous, dependency-free CTI entity extractor. Pulls IoCs, CVEs, threat actors, malware families, and topic tags out of unstructured text — RSS bodies, briefings, dark-web posts, vendor writeups.
@@ -98,7 +98,7 @@ If you need to **extend** the dictionaries, the simplest path is to import the b
 ## What it deliberately does not do
 
 - **No web fetching.** Caller passes text in.
-- **No STIX serialization.** Pair with [`stix21-builder`](https://github.com/pranith84/stix21-builder) for that.
+- **No STIX serialization.** Pair with [`stix21-builder`](https://github.com/Pranith-Jain/stix21-builder) for that.
 - **No fuzzy / LLM matching.** Strict regex + dictionary. If you want novel-entity extraction, pair with an LLM step and merge results.
 - **No de-fanging output.** IoCs come back in fanged form (`example.com`, `https://...`). Pair with `defang()` if you need to embed them in slide decks or chat clients.
 

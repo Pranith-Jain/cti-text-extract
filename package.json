@@ -41,12 +41,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pranith84/cti-text-extract.git"
+    "url": "git+https://github.com/Pranith-Jain/cti-text-extract.git"
   },
   "bugs": {
-    "url": "https://github.com/pranith84/cti-text-extract/issues"
+    "url": "https://github.com/Pranith-Jain/cti-text-extract/issues"
   },
-  "homepage": "https://github.com/pranith84/cti-text-extract#readme",
+  "homepage": "https://github.com/Pranith-Jain/cti-text-extract#readme",
   "devDependencies": {
     "typescript": "^5.4.0",
     "vitest": "^1.6.0"
