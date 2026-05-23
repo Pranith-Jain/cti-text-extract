@@ -17,10 +17,10 @@
  * rejects any candidate that looks like a credential pair.
  */
 
-import { detectType, refang, type IndicatorType } from './indicator';
-import { ACTOR_ALIASES } from './threat-actor-aliases';
-import { MALWARE_DICT } from './malware-dict';
-import { INTEL_KEYWORDS } from './intel-keywords';
+import { detectType, refang, type IndicatorType } from './indicator.js';
+import { ACTOR_ALIASES } from './threat-actor-aliases.js';
+import { MALWARE_DICT } from './malware-dict.js';
+import { INTEL_KEYWORDS } from './intel-keywords.js';
 
 export interface ExtractedIoc {
   type: IndicatorType;

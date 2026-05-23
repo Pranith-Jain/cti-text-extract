@@ -13,15 +13,15 @@ export {
   type ExtractedActor,
   type ExtractedMalware,
   type ExtractedCve,
-} from './extract';
+} from './extract.js';
 
 export {
   detectType,
   refang,
   defang,
   type IndicatorType,
-} from './indicator';
+} from './indicator.js';
 
-export { ACTOR_ALIASES } from './threat-actor-aliases';
-export { MALWARE_DICT } from './malware-dict';
-export { INTEL_KEYWORDS } from './intel-keywords';
+export { ACTOR_ALIASES } from './threat-actor-aliases.js';
+export { MALWARE_DICT } from './malware-dict.js';
+export { INTEL_KEYWORDS } from './intel-keywords.js';
